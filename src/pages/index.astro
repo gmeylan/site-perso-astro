@@ -1,0 +1,26 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en-us">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>Bienvenue</h1>
+			<p>Ceci est mon petit endroit personnel sur internet.</p>
+			<p>
+				L'idée de cet endroit est de pouvoir vous présenter des billets
+				de blog sur mes trouvails sur différentes technologies. Je suis
+				un développeur fullstack TypeScript/Python
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
